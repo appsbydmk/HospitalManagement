@@ -1,8 +1,8 @@
 package com.appsbydmk.hospitalmgmt;
 
 public class HelperConstants {
-	public static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
-	public static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe";
-	public static final String USERNAME = "system";
-	public static final String PASSWORD = "royalelesaux";
+	public static final String JDBC_DRIVER = <driver_name>;
+	public static final String DB_URL = <database_name>;
+	public static final String USERNAME = <username>;
+	public static final String PASSWORD = <password>;
 }
