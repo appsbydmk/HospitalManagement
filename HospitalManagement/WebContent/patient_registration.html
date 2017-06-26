@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/HospitalManagement/css/patient_reg_style.css"
+	type="text/css" />
+<title>Patient appointment form</title>
+</head>
+<body>
+	<h1>Patient Appointment Form</h1>
+	<div id="patientform">
+		<form method="post" action="PatientRegisterServlet"
+			name="patient_register_form" class="register">
+			<div class="form-group">
+				<label for="patientName">First Name: </label> <input type="text"
+					name="patientName" />
+			</div>
+			<div class="form-group">
+				<label for="birthDate">Birth Date: </label> <input type="date"
+					name="birthDate" />
+			</div>
+			<div class="form-group">
+				<label for="patientAddr">Patient Address: </label>
+				<textarea rows="5" cols="50" name="patientAddr"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="city">City: </label> <input type="text" name="city" />
+			</div>
+			<div class="form-group">
+				<label for="state">State: </label> <input type="text" name="state" />
+			</div>
+			<div class="form-group">
+				<label for="phoneNo">Phone No: </label> <input type="number"
+					name="phoneNo" />
+			</div>
+			<div class="form-group">
+				<label for="emailAddr">Email Address: </label> <input type="email"
+					name="emailAddr" />
+			</div>
+			<div class="form-group">
+				<label for="gender">Gender: </label> <select name="gender">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="maritalStatus">Marital Status: </label> <select
+					name="maritalStatus">
+					<option>Married</option>
+					<option>Unmarried</option>
+					<option>Divorced</option>
+					<option>Seperated</option>
+					<option>Widow</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<button type="submit">Submit</button>
+				<button type="button">Back</button>
+				<button type="button">Cancel</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

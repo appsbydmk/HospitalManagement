@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="/HospitalManagement/css/doctors_reg_style.css" type="text/css" />
+<title>Doctor's Registration</title>
+</head>
+<body>
+	<h1>Doctor's Registration</h1>
+	<div id="reg_form">
+		<form action="DoctorRegisterServlet" method="post" name="doc_reg_form"
+			class="register">
+			<div class="form-group">
+				<label for="doctorName">Doctor's Name: </label> <input type="text"
+					name="doctorName" />
+			</div>
+			<div class="form-group">
+				<label for="doctorAge">Doctor's Age: </label> <input type="number"
+					name="doctorAge" />
+			</div>
+			<div class="form-group">
+				<label for="docAddress">Address: </label>
+				<textarea rows="5" cols="50" name="docAddress"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="docMobile">Mobile: </label> <input type="number"
+					name="docMobile" />
+			</div>
+			<div class="form-group">
+				<label for="docEmailAddr">Email Address: </label> <input
+					type="email" name="docEmailAddr" />
+			</div>
+			<div class="form-group">
+				<label for="docQualifications">Qualification(s): (use , as a
+					seperator)</label> <input type="text" name="docQualifications" />
+			</div>
+			<div class="form-group">
+				<label for="docSpcl">Specialization: </label> <select name="docSpcl">
+					<option>Orthopedic Surgeon</option>
+					<option>Pediatrician</option>
+					<option>Neurologist</option>
+					<option>Dermatologist</option>
+					<option>General Physician</option>
+					<option>Opthalmologist</option>
+					<option>ENT Surgeon</option>
+					<option>Radiologist</option>
+					<option>Cardiologist</option>
+					<option>Nephrologist</option>
+					<option>Urologist</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="docExperience">Experience: </label> <input type="number"
+					name="docExperience" />
+			</div>
+			<div class="form-group">
+				<label for="docAchievements">Achievements: </label>
+				<textarea rows="5" cols="50" name="docAchievements"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="docTimings">Available Timings: </label> <select
+					name="docTimings">
+					<option>9 AM to 10 AM</option>
+					<option>10 AM to 11 AM</option>
+					<option>11 AM to 12 PM</option>
+					<option>1 PM to 2 PM</option>
+					<option>2 PM to 3 PM</option>
+					<option>3 PM to 4 PM</option>
+					<option>4 PM to 5 PM</option>
+					<option>5 PM to 6 PM</option>
+					<option>6 PM to 7 PM</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<button type="submit">Submit</button>
+				<button type="button">Back</button>
+				<button type="button">Cancel</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

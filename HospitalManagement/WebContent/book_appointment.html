@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="/HospitalManagement/css/book_appt_style.css" type="text/css" />
+<title>Book an appointment</title>
+</head>
+<body>
+	<h1>Book an appointment</h1>
+	<div id="apptform">
+		<form method="post" action="BookAppointmentServlet" name="book_appt_form"
+			class="appointment">
+			<div class="form-group">
+				<label for="docSpcl">Doctor's Specialization: </label> <select name="docSpcl">
+					<option>Orthopedic Surgeon</option>
+					<option>Pediatrician</option>
+					<option>Neurologist</option>
+					<option>Dermatologist</option>
+					<option>General Physician</option>
+					<option>Opthalmologist</option>
+					<option>ENT Surgeon</option>
+					<option>Radiologist</option>
+					<option>Cardiologist</option>
+					<option>Nephrologist</option>
+					<option>Urologist</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="apptDate">Appointment Date: </label> <input type="date"
+					name="apptDate" />
+			</div>
+			<div class="form-group">
+				<label for="docTimings">Appointment Timings: </label> <select
+					name="docTimings">
+					<option>9 AM to 10 AM</option>
+					<option>10 AM to 11 AM</option>
+					<option>11 AM to 12 PM</option>
+					<option>1 AM to 2 PM</option>
+					<option>2 AM to 3 PM</option>
+					<option>3 AM to 4 PM</option>
+					<option>4 AM to 5 PM</option>
+					<option>5 AM to 6 PM</option>
+					<option>6 AM to 7 PM</option>
+				</select>
+			</div>
+			<div>
+				<label for="patientName">Patient Name: </label> <input type="text"
+					name="patientName" />
+			</div>
+			<div class="form-group">
+				<button type="submit">Submit</button>
+				<button type="button">Back</button>
+				<button type="button">Cancel</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
